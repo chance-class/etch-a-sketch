@@ -8,9 +8,16 @@ function createGrid () {
     square.classList.add('child');
     width = (700 / n);
     height = (700 / n);
-    square.setAttribute('style', `width: ${width}px; height: ${height}px; background: blue;`)
+    square.setAttribute('style', `width: ${width}px; height: ${height}px;`)
     container.appendChild(square);
+    square.addEventListener('mousemove', (event) => {
+      event.target.style.backgroundColor = 'black';
+    });
   }
 }
 
 createGrid();
+
+const square = document.querySelector('.child');
+
+
