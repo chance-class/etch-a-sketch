@@ -1,0 +1,11 @@
+.container {
+  width: 700px;
+  height: 700px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*.child {
+  flex: 1 0 (960 / n)px;
+}
