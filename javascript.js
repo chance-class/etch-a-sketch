@@ -1,6 +1,18 @@
 
 const container = document.querySelector('.container');
 
+  //Math.floor(Math.random()*16777215).toString(16);
+
+  function randomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+
+
 let n = 16;
 
 function createGrid () {
@@ -12,7 +24,7 @@ function createGrid () {
     square.setAttribute('style', `width: ${width}px; height: ${height}px;`)
     container.appendChild(square);
     square.addEventListener('mousemove', (event) => {
-      event.target.style.backgroundColor = 'black';
+      event.target.style.backgroundColor = randomColor();
     });
   }
 }
