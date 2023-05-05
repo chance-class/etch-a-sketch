@@ -1,11 +1,19 @@
+body {
+  text-align: center;
+}
+
 .container {
   width: 700px;
   height: 700px;
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
+  border: 5px solid black;
 }
 
-/*.child {
-  flex: 1 0 (960 / n)px;
+#gridSizeBtn {
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
 }
+
